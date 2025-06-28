@@ -8,34 +8,145 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            text-align: center;
             margin: 0;
             padding: 20px;
+            line-height: 1.6;
         }
         header {
             background-color: #333;
             color: white;
-            padding: 10px;
+            padding: 20px;
+            text-align: center;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
+        header h2 {
+            margin: 5px 0;
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        .container {
             max-width: 800px;
             margin: 0 auto;
+            text-align: left;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .intro {
+            margin-bottom: 20px;
+        }
+        .incident {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .incident:hover {
+            background-color: #f0f0f0;
+        }
+        .incident h3 {
+            margin: 0;
+            color: #d32f2f;
+            font-size: 1.4em;
+        }
+        .details {
+            display: none;
+            padding: 15px;
+            background-color: #f5f5f5;
+            margin-top: 10px;
+            border-left: 4px solid #d32f2f;
+        }
+        .incident.active .details {
+            display: block;
+        }
+        video {
+            max-width: 100%;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            color: #666;
+        }
+        a {
+            color: #d32f2f;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            header h2 {
+                font-size: 1.2em;
+            }
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const incidents = document.querySelectorAll('.incident');
+            incidents.forEach(incident => {
+                incident.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
         <h1>GoldySucks.xyz</h1>
-        <h2>Exposing the Truth About iGoldy</h2>
+        <h2>Exposing iGoldy’s Violations and Kick’s Inaction</h2>
     </header>
     <img src="goldy-image.png" alt="iGoldy with cheese and chips">
-    <p>iGoldy, a streamer known for breaking Kick community guidelines, has gained notoriety as a prolific scammer. His streams often feature unconsented engagements with underage children, raising serious concerns. Reports suggest he makes sexually suggestive comments to these vulnerable individuals, potentially indicating predatory behavior. This site aims to raise awareness about his actions.</p>
+    <div class="container">
+        <div class="intro">
+            <p>The streamer t5goldy has repeatedly violated Kick’s Community Guidelines through inappropriate interactions with minors, yet Kick has failed to take meaningful action beyond removing reported videos. Despite multiple anonymous reports, t5goldy continues to stream, endangering vulnerable individuals. This site documents two confirmed incidents with clipped video evidence (faces blurred to protect minors’ identities) to highlight these violations and Kick’s inadequate moderation. Archived evidence is available for legitimate investigations; contact us at [insert placeholder email or contact form link].</p>
+        </div>
+        
+        <div class="incident">
+            <h3>Incident 1: Inappropriate and Sexualized Comments to Minors</h3>
+            <div class="details">
+                <p><strong>Date:</strong> Unknown (VOD removed by Kick)</p>
+                <p><strong>Description:</strong> In a now-removed video (originally at Kick’s video ID 460badb0-e38b-4565-9c21-99d23be433d7), t5goldy engaged in a live interaction with clearly underage individuals. At approximately 05:50, the innocent laughter of very young children was audible, confirming their age. At 06:15, t5goldy made highly inappropriate and sexualized comments, stating, “I’m gonna get with your sister but the thing is I actually want to beat you on this quiz,” directed at a minor. The phrase “get with” typically implies physical or sexual engagement, which is grossly inappropriate for a streamer in their mid-to-late 30s to say about a child’s underage sibling. Despite a prior strike and explicit instructions from Kick to skip interactions with minors, t5goldy continued this behavior without the children’s consent or knowledge.</p>
+                <p><strong>Video Evidence:</strong> The below clip, with minors’ faces blurred to protect their privacy, shows the inappropriate interaction described.</p>
+                <video controls>
+                    <source src="incident1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p><strong>Analysis:</strong> This incident violates Kick’s Community Guidelines, which prohibit content that endangers or exploits minors and require streamers to avoid inappropriate behavior or discussions with young individuals. The sexualized comment about a minor’s sibling constitutes exploitative behavior, and the lack of consent for streaming these interactions breaches privacy and safety standards. Kick’s response was to remove the VOD after multiple reports, but no further action was taken against t5goldy, suggesting a failure to enforce their zero-tolerance policy against child endangerment.</p>
+            </div>
+        </div>
+
+        <div class="incident">
+            <h3>Incident 2: Continued Engagement with Minors Despite Acknowledging Rules</h3>
+            <div class="details">
+                <p><strong>Date:</strong> Unknown (VOD active as of last report)</p>
+                <p><strong>Description:</strong> In another video (available at Kick’s video ID 20708427-b23b-48a2-aa63-d0909b143435), t5goldy streamed for approximately 1.5 hours, during which he repeatedly acknowledged that he should not be interacting with underage individuals but continued to do so. Several children in the stream identified his behavior as predatory, with some calling him a “pedo” and pointing out that he was inappropriately engaging with minors, including asking a minor about their OnlyFans account. These interactions were without consent and disregarded Kick’s prior warnings to skip such engagements, demonstrating blatant non-compliance.</p>
+                <p><strong>Video Evidence:</strong> The below clip, with minors’ faces blurred to protect their privacy, shows t5goldy acknowledging the rules yet continuing inappropriate interactions, including the OnlyFans request.</p>
+                <video controls>
+                    <source src="incident2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p><strong>Analysis:</strong> This incident further violates Kick’s Community Guidelines, which mandate respecting the privacy and safety of minors and prohibiting inappropriate interactions. By acknowledging the rules yet continuing to engage with minors and making requests like asking for an OnlyFans account, t5goldy’s actions show intentional disregard for platform policies, escalating the risk of exploitation. The fact that children recognized and called out his behavior as predatory underscores the severity of the violation. Kick’s failure to identify and act on this content, despite reports flagging child endangerment concerns, indicates a lack of thorough investigation into reported users’ activities, undermining their commitment to protecting vulnerable individuals.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>This site is maintained anonymously to protect vulnerable individuals and raise awareness about streaming platform accountability. For inquiries or to request evidence for legitimate investigations, contact [insert placeholder email or contact form link].</p>
+    </footer>
 </body>
 </html>
